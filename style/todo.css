@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0.9em;
+  width: 100%;
+  max-width: 700px;
+  margin: 35px auto;
+  color: rgb(44, 44, 44);
+}
+
+input {
+  margin-bottom: 10px;
+  width: 81%;
+  outline: 0;
+  border: 0.5px solid grey;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  float: right;
+  padding: 6px 8px 5px;
+  border-radius: 10px;
+}
+
+.button--hidden {
+  display: none;
+}
+
+.add_todo {
+  padding: 5px 12px 10px;
+  margin: 10px;
+  border: 0.5px solid rgb(44, 44, 44);
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.add_todo__title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.add_todo__desc {
+  font-size: 1em;
+}
+
+.add_todo__button {
+  background-color: rgb(73, 73, 73);
+  color: white;
+  border: none;
+}
+
+.add_todo__button:hover {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border: none;
+}
+
+.todo {
+  min-width: 300px;
+  background-color: rgb(239, 240, 227);
+  margin: 10px;
+  padding: 10px 10px 15px;
+  border: 0.5px solid rgb(177, 177, 177);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todo:hover {
+  box-shadow: 1px 1px 4px rgba(121, 121, 121, 0.301);
+}
+
+.todo--done {
+  background-color: rgb(245, 245, 245);
+  color: grey;
+}
+
+.todo--pinned {
+  background-color: rgb(253, 255, 231);
+}
+
+.add_todo__info_header {
+  max-width: 150px;
+  background-color: white;
+  padding: 2px;
+  border: 0.5px solid rgb(44, 44, 44);
+  border-radius: 10px;
+  color: rgb(44, 44, 44);
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  bottom: 13px;
+  left: 10px;
+}
+
+.todo__button {
+  background-color: transparent;
+  border: 0.5px solid rgb(177, 177, 177);
+  color: rgb(177, 177, 177);
+}
+
+.todo__button:hover {
+  background-color: transparent;
+  border: 0.5px solid rgb(151, 151, 151);
+  color: rgb(151, 151, 151);
+}
+
+.todo__desc {
+  margin-top: 10px;
+}
+
+.todo--done > .todo__title, .todo--done > .todo__desc {
+  text-decoration: line-through;
+}
